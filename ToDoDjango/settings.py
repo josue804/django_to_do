@@ -77,14 +77,27 @@ WSGI_APPLICATION = 'ToDoDjango.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
+#local
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'tododjango',
+#         'USER': 'tododjangouser',
+#         'PASSWORD': 'snapple',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
+
+#heroku, from running $heroku config
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'tododjango',
-        'USER': 'tododjangouser',
-        'PASSWORD': 'snapple',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': 'dc38450ie6m5or',
+        'USER': 'bvhxyywdhtomdc',
+        'PASSWORD': 'qVFd8XWoatvXpXS2E8DC9XCtPs',
+        'HOST': 'ec2-54-204-41-46.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -131,7 +144,7 @@ STATIC_URL = '/static/'
 #Heroku-----------------
 # Update database configuration with $DATABASE_URL.
 db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'] =  dj_database_url.config()
+# DATABASES['default'] =  dj_database_url.config()
 DATABASES['default'].update(db_from_env)
 
 # Static files (CSS, JavaScript, Images)
