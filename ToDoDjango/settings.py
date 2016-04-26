@@ -78,28 +78,28 @@ WSGI_APPLICATION = 'ToDoDjango.wsgi.application'
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
 #local
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'tododjango',
-#         'USER': 'tododjangouser',
-#         'PASSWORD': 'snapple',
-#         'HOST': 'localhost',
-#         'PORT': '',
-#     }
-# }
-
-#heroku, from running $heroku config
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dc38450ie6m5or',
-        'USER': 'bvhxyywdhtomdc',
-        'PASSWORD': 'qVFd8XWoatvXpXS2E8DC9XCtPs',
-        'HOST': 'ec2-54-204-41-46.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'NAME': 'tododjango',
+        'USER': 'tododjangouser',
+        'PASSWORD': 'snapple',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
+
+#heroku, from running $heroku config
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'dc38450ie6m5or',
+#         'USER': 'bvhxyywdhtomdc',
+#         'PASSWORD': 'qVFd8XWoatvXpXS2E8DC9XCtPs',
+#         'HOST': 'ec2-54-204-41-46.compute-1.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
 
 
 # Password validation
